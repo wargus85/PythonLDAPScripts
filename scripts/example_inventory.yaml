@@ -1,0 +1,13 @@
+all:
+  hosts:
+    SERVER_001:
+      # if the override is set here, the script will look to the userlist below.
+      # if will be overridden by setting the group variable below.
+      override: True
+      machine_users: ['User1','User2']
+    SERVER_002:
+    SERVER_003:
+    vars:
+      #if override is set to true here, the mailer script will not look at individual servers, but the the list below.
+      override: True        
+      machine_users: ['User1','User2','User3']
